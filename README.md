@@ -5,7 +5,8 @@ och får direkt veta vilka tester som är godkända.
 
 | Nr | Övning | Mapp |
 |---|---|---|
-| 01 | Sortera en lista | [`01-sortera-lista`](01-sortera-lista) |
+| 01 | Grunder – villkor, loopar och arrayer | [`01-grunder`](01-grunder) |
+| 02 | Sortera en lista | [`02-sortera-lista`](02-sortera-lista) |
 
 ---
 
@@ -24,10 +25,14 @@ GitHub stänger av automatiska körningar i nya forkar.
 Gör du inte det här steget händer ingenting när du pushar.
 
 ### 3. Klona din fork
+Byt `DITT-NAMN` mot **ditt eget** GitHub-namn. Klona din fork, inte lärarens repo,
+annars går det inte att pusha.
 ```bash
-git clone https://github.com/OskarRayFrayssinet/learn-csharp-with-oskar.git
+git clone https://github.com/DITT-NAMN/learn-csharp-with-oskar.git
 cd learn-csharp-with-oskar
+start learn-csharp-with-oskar.sln
 ```
+Den sista raden öppnar övningarna i Visual Studio.
 
 ### 4. Koppla till lärarens repo
 Då kan du hämta nya övningar när de kommer:
@@ -41,6 +46,8 @@ git remote add upstream https://github.com/OskarRayFrayssinet/learn-csharp-with-
 
 1. Öppna övningens mapp och läs dess README.
 2. Skriv din kod i den fil som README:n anger. **Ändra inte i testfilerna.**
+   Kör testerna i Visual Studio med **Test → Run All Tests**.
+   (Tryck inte på ▶ Start – övningarna är inga program som kan startas.)
 3. Spara, committa och pusha:
    ```bash
    git add .

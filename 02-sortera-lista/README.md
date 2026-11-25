@@ -1,4 +1,4 @@
-# Övning 01: Sortera en lista
+# Övning 02: Sortera en lista
 
 Du ska skriva egna metoder som kontrollerar och sorterar listor med heltal.
 
