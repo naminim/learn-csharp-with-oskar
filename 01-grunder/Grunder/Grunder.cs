@@ -26,7 +26,15 @@ public static class Ovningar
     public static int StorstAvTva(int a, int b)
     {
         // Skriv din kod här
-        throw new NotImplementedException();
+        if (a > b)
+        {
+            return a;
+
+        }
+        else
+        {
+            return b;
+        }
     }
 
     /// <summary>
@@ -41,7 +49,14 @@ public static class Ovningar
     public static bool ArJamnt(int tal)
     {
         // Skriv din kod här
-        throw new NotImplementedException();
+        if (tal % 2 == 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     /// <summary>
@@ -62,7 +77,30 @@ public static class Ovningar
     public static string Betyg(int poang)
     {
         // Skriv din kod här
-        throw new NotImplementedException();
+        if (poang >= 90)
+        {
+            return "A";
+        }
+        else if (poang >= 80)
+        {
+            return "B";
+        }
+        else if (poang >= 70)
+        {
+            return "C";
+        }
+        else if (poang >= 60)
+        {
+            return "D";
+        }
+        else if (poang >= 50)
+        {
+            return "E";
+        }
+        else
+        {
+            return "F";
+        }
     }
 
     // =====================================================================
@@ -79,7 +117,12 @@ public static class Ovningar
     public static int SummaUppTill(int n)
     {
         // Skriv din kod här
-        throw new NotImplementedException();
+        int sum = 0;
+        for (int i = 1; i <= n; i++)
+        {
+            sum += i;
+        }
+        return sum;
     }
 
     /// <summary>
@@ -93,7 +136,15 @@ public static class Ovningar
     public static int AntalJamnaUppTill(int n)
     {
         // Skriv din kod här
-        throw new NotImplementedException();
+        int count = 0;
+        for (int i = 1; i <= n; i++)
+        {
+            if (ArJamnt(i))
+            {
+                count++;
+            }
+        }
+        return count;
     }
 
     /// <summary>
