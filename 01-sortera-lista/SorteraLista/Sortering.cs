@@ -21,7 +21,15 @@ public static class Sortering
     public static bool ArSorterad(List<int> lista)
     {
         // Skriv din kod här
-        throw new NotImplementedException();
+        for (int i = 0; i < lista.Count - 1; i++)
+        {
+            if (lista[i] > lista[i + 1])
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     /// <summary>
@@ -38,7 +46,18 @@ public static class Sortering
     public static List<int> SorteraStigande(List<int> lista)
     {
         // Skriv din kod här
-        throw new NotImplementedException();
+        var kopia = new List<int>(lista);
+        for (int i = 0; i < kopia.Count - 1; i++)
+        {
+            for (int j = 0; j < kopia.Count - 1 - i; j++)
+            {
+                if (kopia[j] > kopia[j + 1])
+                {
+                    (kopia[j], kopia[j + 1]) = (kopia[j + 1], kopia[j]);
+                }
+            }
+        }
+        return kopia;
     }
 
     /// <summary>
@@ -52,6 +71,17 @@ public static class Sortering
     public static List<int> SorteraFallande(List<int> lista)
     {
         // Skriv din kod här
-        throw new NotImplementedException();
+        var kopia = new List<int>(lista);
+        for (int i = 0; i < kopia.Count - 1; i++)
+        {
+            for (int j = 0; j < kopia.Count - 1 - i; j++)
+            {
+                if (kopia[j] < kopia[j + 1])
+                {
+                    (kopia[j], kopia[j + 1]) = (kopia[j + 1], kopia[j]);
+                }
+            }
+        }
+        return kopia;
     }
 }
